@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1{
+     background-image: url("../assets/one1.jpeg");
+   
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+     background-size: cover; 
+    background-position:center;
+    overflow: hidden;
+   
+    
+}
+
+nav{
+    z-index: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .94rem;
+    color: aliceblue;
+    height: 5%;
+}
+
+.logo{
+    position: absolute;
+    left:20%;
+    top:2%;    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%); */
+}
+  .logo h5{
+    font-size: 32px;
+  }
+.logo h5 span{
+    color:#02c6e9;
+}
+
+ul {
+   position: absolute;
+   right:20%;
+   top:3%;
+}
+
+li{
+    padding: 5px;
+    font-size: 12px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section2{
+    height:70vh;
+    background-color: rgb(140, 137, 132);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3{
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)20%,rgba(0,0,0,0.9)80%);
+}
+
+#glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.glass{
+    
+    height: 100vh;
+    width: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%);
+    backdrop-filter: blur(.2rem);
+     /* background-color: rgba(0, 0, 0, 0.4);  */
+    position: absolute;
+    top:15%;
+    z-index: 550; 
+
+
+}
+
+.intro{
+    color: white;
+    margin-left: 2%;
+    margin-top:5%;
+    width: 50%;
+    text-align: left;
+   
+}
+
+.intro h5{
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+
+
+.intro h3{
+    padding: 0;
+    margin: 0;
+    color:#02c6e9; 
+}
+
+.intro p:first-child{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    
+}
+
+.intro button{
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 12px;
+    color:white;
+    outline:none ;
+    cursor: pointer;
+    margin-top: 10px;
+    animation-name: display;
+    animation-duration: 3s;
+
+
+}
+
+/* animation on the button */
+@keyframes display{
+    from{transform: translateX(0);}
+    to{transform: translateX(200px);}
+
+}
+
+.intro button:hover{
+    background-color: #02c6e9;
+    transition: 0.4s
+}
+
+.hdAbout{
+    text-align: center; 
+    color: white; 
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
+.hdAbout span{
+      background-color: red;
+      height: 1px;
+      width: 20%;
+     
+      
+}
+
+.aboutme{
+    position: absolute;
+    top:50%;
+    display:flex ;
+    height: 50%;
+
+
+}
+
+.left{
+    width:40%;
+    position: relative;
+
+}
+
+.rectangle1{
+    height: 220px;
+    width: 150px;
+    border: 5px solid #02c6e9;
+    position: absolute;
+    left: 20%;
+    top:10%;
+}
+.rectangle2{
+    height: 225px;
+    width: 155px;
+    border: 2px solid #5d5d5f;
+    position: absolute;
+    left: 30%;
+    top:14%;
+    z-index: 50;
+    background-image: url(../images/person1-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+.right{
+ width:50%;
+ color: white;
+ position: relative;
+ left: 1%;
+ top:10%;
+
+}
+
+.right h4{
+    position: absolute;
+    top:35%;
+    text-align: center;
+    margin: 20px;
+}
+
+ .right p:nth-child(1){
+    position: relative;
+    bottom:1%;
+    left: 10%;
+} 
+.right .progress{
+    position: relative;
+    top:17%;
+    /* border: 2px solid red; */
+    left: 10%;
+    margin: 10px;
+} 
+/* glass effect on top of section 2 */
+#myWork{
+    height: 50vh;
+    width: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%);
+    backdrop-filter: blur(.2rem);
+     /* background-color: rgba(0, 0, 0, 0.4);  */
+    top:50%;
+    z-index:550; 
+    position: absolute;
+    background-color: #8C8984;
+
+}
+
+
+/* cards */
+
+#work{
+    height: 100%;
+}
+.row{
+    height: 80%;
+
+
+
+    
+}
+#work .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%); */
+    background-image: linear-gradient(190deg,rgb(173,181,189),#02c6e9);
+
+    backdrop-filter: blur(.2rem);
+
+     /* background-color:red;  */
+     /* inherit; */ 
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.06);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    
+}
+
+.card .face.front-face,
+.card .face.back-face {
+    text-align: center;
+    color: black;
+    position: absolute;
+
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center */
+}
+
+
+
+
+.card .face.front-face .name {
+    letter-spacing: 2px
+}
+
+.card .face.front-face .designation {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 0.8px
+} 
+
+ .card:hover .face.front-face {
+    transform: rotateY(180deg)
+} 
+/* cards backface */
+
+.card .face.back-face {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.06);
+    transform: rotateY(180deg); 
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none
+}
+
+.card .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem
+}
+
+.card .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem
+}
+
+.card:hover .face.back-face {
+    transform: rotateY(360deg)
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    
+
+  
+}
+ .card button{
+     background-color: transparent;
+     padding: 5px;
+     width:60px;
+     margin-top: 50px;
+     border-radius: 50px;
+     cursor: pointer;
+ }
+
+ .pt-3 p{
+    text-transform: lowercase !important;
+    /* color: #02c6e9; */
+    color: blanchedalmond;
+    margin: 20px;
+
+ }
+
+ /* progress bar */
+ .progress{
+     height: 8px;
+
+   
+ }
+
+ .progress-bar{
+
+    background-color:#02c6e9 !important;
+
+ }

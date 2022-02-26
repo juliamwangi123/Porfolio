@@ -63,7 +63,7 @@ li{
 }
 
 .section3{
-    height: 40vh;
+    height: 50vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8)20%,rgba(0,0,0,0.9)80%);
 }
 
@@ -345,7 +345,8 @@ li{
 }
 
 .card:hover .face.back-face {
-    transform: rotateY(360deg)
+    transform: rotateY(360deg);
+    
 }
 
 .card a{
@@ -383,4 +384,61 @@ li{
 
     background-color:#02c6e9 !important;
 
+ }
+.contact{
+    position: relative;
+    top:55%;
+    height: 45%;
+}
+ .contact input:nth-child(1){
+     position: absolute;
+     left: 30%;
+     background-color: rgb(140, 137, 132);
+     color: white;
+
+
+ }
+ .contact input:nth-child(2){
+    margin-top: 50px;
+    position: inherit;
+    left: 30%;
+    background-color: rgb(140, 137, 132);
+    border-radius: 2%;
+
+
+
+}
+
+ .contact textarea{
+     position: absolute;
+     left: 50%;
+     margin-left: 20px;
+     background-color: rgb(140, 137, 132);
+
+     
+ }
+
+ .contact button{
+     position: absolute;
+     bottom:5%;
+     left:47%;
+     padding: 5px;
+     color: white;
+     outline: none;
+     background-image: linear-gradient(190deg,rgb(173,181,189),#02c6e9);
+     border-radius: 5px;
+
+
+
+ }
+
+ .contact input::placeholder { 
+    color: white;
+    opacity: 1; 
+
+ }
+
+ .contact textarea::placeholder{
+     color: white;
+     opacity:1;
  }

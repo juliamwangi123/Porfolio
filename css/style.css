@@ -52,7 +52,10 @@ li{
     font-size: 15px;
     font-weight: bold;
 }
-
+ul li a{
+    text-decoration: none;
+    color: white;
+}
 .section2{
     height:70vh;
     background-color: rgb(140, 137, 132);
@@ -89,7 +92,7 @@ li{
 
 }
 
-.intro{
+#intro{
     color: white;
     margin-left: 2%;
     margin-top:5%;
@@ -98,7 +101,7 @@ li{
    
 }
 
-.intro h5{
+#intro h5{
     padding: 0;
     margin: 0;
     
@@ -107,20 +110,20 @@ li{
 
 
 
-.intro h3{
+#intro h3{
     padding: 0;
     margin: 0;
     color:#02c6e9; 
 }
 
-.intro p:first-child{
+#intro p:first-child{
     padding: 0;
     margin: 0;
     font-size: 18px;
     
 }
 
-.intro button{
+#intro button{
     position: relative;
     padding: 10px;
     background-color: transparent;
@@ -142,11 +145,15 @@ li{
 
 }
 
-.intro button:hover{
+#intro button:hover{
     background-color: #02c6e9;
     transition: 0.4s
 }
-
+#intro button a{
+    text-decoration: none;
+    color: white;
+    opacity: 2;
+}
 .hdAbout{
     text-align: center; 
     color: white; 
@@ -162,7 +169,7 @@ li{
       
 }
 
-.aboutme{
+#aboutme{
     position: absolute;
     top:50%;
     display:flex ;
@@ -385,12 +392,12 @@ li{
     background-color:#02c6e9 !important;
 
  }
-.contact{
+#contact{
     position: relative;
     top:55%;
     height: 45%;
 }
- .contact input:nth-child(1){
+ #contact input:nth-child(1){
      position: absolute;
      left: 30%;
      background-color: rgb(140, 137, 132);
@@ -398,7 +405,7 @@ li{
 
 
  }
- .contact input:nth-child(2){
+ #contact input:nth-child(2){
     margin-top: 50px;
     position: inherit;
     left: 30%;
@@ -409,7 +416,7 @@ li{
 
 }
 
- .contact textarea{
+ #contact textarea{
      position: absolute;
      left: 50%;
      margin-left: 20px;
@@ -418,7 +425,7 @@ li{
      
  }
 
- .contact button{
+ #contact button{
      position: absolute;
      bottom:5%;
      left:47%;
@@ -432,13 +439,13 @@ li{
 
  }
 
- .contact input::placeholder { 
+ #contact input::placeholder { 
     color: white;
     opacity: 1; 
 
  }
 
- .contact textarea::placeholder{
+ #contact textarea::placeholder{
      color: white;
      opacity:1;
  }

@@ -501,7 +501,7 @@ ul li a:hover{
             position: absolute;
             top:50%;
             display:block ;
-            height: 50%;
+            height: 60%;
         
         
         }
@@ -516,7 +516,7 @@ ul li a:hover{
             color: white;
             position: relative;
             left: 1%;
-            top:30%;
+            top:20%;
            
            }
 
@@ -532,5 +532,14 @@ ul li a:hover{
            .rectangle2{
                height: 120px;
                width: 150px;
+           }
+
+           #skills{
+               position: absolute;
+               top: 60%;
+           }
+
+           .progress{
+               margin-top: 300px;
            }
  }

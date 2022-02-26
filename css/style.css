@@ -492,9 +492,14 @@ ul li a:hover{
           .logo h5{
             font-size: 22px;
           }
-
           .hdAbout{
+            position: absolute;
+            left: 30%;
+          }
+          .hdAbout h4{
+              
               text-align: center;
+             
           }
 
           #aboutme{
@@ -535,11 +540,36 @@ ul li a:hover{
            }
 
            #skills{
-               position: absolute;
-               top: 60%;
+              display: none;
+               
            }
 
            .progress{
-               margin-top: 300px;
+               margin-top: 500px;
            }
+
+           .row{
+               display: flex;
+               flex-direction: row;
+           }
+           .card{
+               height: 100%;
+               width: 50%;
+           }
+
+           #myWork{
+               position: relative;
+               top:53%;
+               width:100%;
+           }
+
+           .section3{
+               height: 80vh;
+           }
+
+           #contact{
+               display: flex;
+               flex-direction: column;
+           }
+
  }

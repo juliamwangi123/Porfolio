@@ -1,4 +1,4 @@
-let menu = document.getElementsByClassName("fa fa-bars");
+let menu = document.getElementsByClassName("menu");
 let showMenu = document.getElementsByClassName("menuBar")
 menu.addEventListiner("click", 
 
@@ -9,4 +9,5 @@ function show(){
       } else {
         showMenu.style.display = "block";
       }
+      console.log('hi');
 });

@@ -486,19 +486,51 @@ ul li a:hover{
 
         .logo{
             position: absolute;
-            left:2%;
+            left:20%;
             top:3%;    
         }
           .logo h5{
             font-size: 22px;
           }
 
-
-          #intro{
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border:2px solid red;
+          .hdAbout{
+              text-align: center;
           }
 
+          #aboutme{
+            position: absolute;
+            top:50%;
+            display:block ;
+            height: 50%;
+        
+        
+        }
+        .left{
+            width:100%;
+            position: relative;
+            height: 20%;
+        
+        }
+        .right{
+            width:80%;
+            color: white;
+            position: relative;
+            left: 1%;
+            top:30%;
+           
+           }
+
+           #myWork{
+               top: 80%;
+           }
+
+           .rectangle1{
+            height: 120px;
+            width: 150px;
+           }
+
+           .rectangle2{
+               height: 120px;
+               width: 150px;
+           }
  }

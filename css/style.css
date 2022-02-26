@@ -26,6 +26,10 @@ nav{
     height: 5%;
 }
 
+.menu{
+    display: none;
+}
+
 .logo{
     position: absolute;
     left:20%;
@@ -59,6 +63,7 @@ ul li a{
 ul li a:hover{
     color: #02c6e9;
 }
+
 
 .section2{
     height:70vh;
@@ -456,26 +461,33 @@ ul li a:hover{
 
 /* mobile-view */
  @media screen and (max-width:768px) {
+
+         body{
+             margin: 0;
+             padding: 0;
+         }
+
+
         .section1{
             height: 30vh;
             width:100%
         }
 
         nav ul{
-            position: absolute;
-            right:0%;
-            top:2%;
+            display: none;
         }
 
-        nav ul li{
-            padding:2px;
-            font-size: 12px;
+       
+        .menu{
+            display: inline-block;
+            
         }
+        
 
         .logo{
             position: absolute;
-            left:0%;
-            top:2%;    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%); */
+            left:2%;
+            top:3%;    
         }
           .logo h5{
             font-size: 22px;
@@ -488,4 +500,5 @@ ul li a:hover{
               justify-content: center;
               border:2px solid red;
           }
+
  }

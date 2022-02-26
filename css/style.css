@@ -5,12 +5,11 @@
 }
 
 .section1{
-     background-image: url("../assets/one1.jpeg");
-   
+    background-image: url("../assets/one1.jpeg");
     min-height: 80vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
-     background-size: cover; 
+    background-size: cover; 
     background-position:center;
     overflow: hidden;
    
@@ -453,4 +452,40 @@ ul li a:hover{
  #contact textarea::placeholder{
      color: white;
      opacity:1;
+ }
+
+/* mobile-view */
+ @media screen and (max-width:768px) {
+        .section1{
+            height: 30vh;
+            width:100%
+        }
+
+        nav ul{
+            position: absolute;
+            right:0%;
+            top:2%;
+        }
+
+        nav ul li{
+            padding:2px;
+            font-size: 12px;
+        }
+
+        .logo{
+            position: absolute;
+            left:0%;
+            top:2%;    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%); */
+        }
+          .logo h5{
+            font-size: 22px;
+          }
+
+
+          #intro{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border:2px solid red;
+          }
  }

@@ -1,9 +1,5 @@
 $(document).ready(function(){
-$("nav").click(function(){
-    $("this").css("opacity", 0.2)
-
-});
-
+    $("#btn").effect("bounce", { times:4, distance:200 }, 400);
 
 
 

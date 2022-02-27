@@ -283,11 +283,7 @@ ul li a:hover{
     height: 100%;
 }
 .row{
-    height: 80%;
-
-
-
-    
+    height: 80%;  
 }
 
 
@@ -312,8 +308,7 @@ ul li a:hover{
     background: rgba(255, 255, 255, 0.06);
     transition: 0.5s;
     backface-visibility: hidden;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    
     
 }
 
@@ -324,10 +319,7 @@ ul li a:hover{
     position: absolute;
 
     
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center */
+  
 }
 
 
@@ -337,11 +329,7 @@ ul li a:hover{
     letter-spacing: 2px
 }
 
-.card .face.front-face .designation {
-    font-size: 0.8rem;
-    color: #ddd;
-    letter-spacing: 0.8px
-} 
+
 
  .card:hover .face.front-face {
     transform: rotateY(180deg)
@@ -357,19 +345,14 @@ ul li a:hover{
     user-select: none
 }
 
-.card .face.back-face .fa-quote-left {
+ .card .face.back-face .fa-quote-left {
     position: absolute;
     top: 25px;
     left: 25px;
     font-size: 1.2rem
 }
 
-.card .face.back-face .fa-quote-right {
-    position: absolute;
-    bottom: 35px;
-    right: 25px;
-    font-size: 1.2rem
-}
+
 
 .card:hover .face.back-face {
     transform: rotateY(360deg);

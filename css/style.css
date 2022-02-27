@@ -566,10 +566,22 @@ ul li a:hover{
            .section3{
                height: 80vh;
            }
-
            #contact{
-               display: flex;
-               flex-direction: column;
+               position: relative;
+               left: 10%;
+               top: 40%;
+               border: 2px solid red;
+               width: 70%;
+
+           }
+           #contact textarea{
+               position: relative;
+               top: 10%;
+               border: 2px solid red;
+               width: 70%;
+               left: 10%;
+
+                
            }
 
  }

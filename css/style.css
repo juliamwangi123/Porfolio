@@ -577,13 +577,15 @@ ul li a:hover{
 
            #contact input{
                position: relative;
+               width: 70%;
+               left: 5%;
 
            }
            #contact textarea{
                position: relative;
                top: 10%;
                width: 70%;
-               left: 10%;
+               left: 25%
 
                 
            }

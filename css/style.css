@@ -243,6 +243,25 @@ ul li a:hover{
     left: 10%;
     margin: 10px;
 } 
+/* progress bar */
+.progress{
+    height: 11px;
+
+  
+}
+
+.progress-bar{
+
+   background-color:#02c6e9 !important;
+
+}
+.progress-description{
+    color: white;
+    position: relative;
+    top:70%;
+    left: 80%;
+}
+
 /* glass effect on top of section 2 */
 #myWork{
     height: 50vh;
@@ -298,7 +317,6 @@ ul li a:hover{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.06);
-    transform-style: preserve-3d;
     transition: 0.5s;
     backface-visibility: hidden;
     border-top: 1px solid #ddd;
@@ -389,18 +407,7 @@ ul li a:hover{
 
  }
 
- /* progress bar */
- .progress{
-     height: 8px;
-
-   
- }
-
- .progress-bar{
-
-    background-color:#02c6e9 !important;
-
- }
+ 
 #contact{
     position: relative;
     top:55%;

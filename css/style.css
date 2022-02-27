@@ -574,10 +574,14 @@ ul li a:hover{
                width: 70%;
 
            }
+
+           #contact input{
+               position: relative;
+
+           }
            #contact textarea{
                position: relative;
                top: 10%;
-               border: 2px solid red;
                width: 70%;
                left: 10%;
 

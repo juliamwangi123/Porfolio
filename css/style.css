@@ -289,20 +289,13 @@ ul li a:hover{
 
     
 }
-#work .col-lg-4 {
-    display: flex;
-    justify-content: center;
-}
+
 
 .card {
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
-    perspective: 500px;
     border: none;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1)30%,rgba(0, 0, 0, 0.8)70%); */
     background-image: linear-gradient(190deg,rgb(173,181,189),#02c6e9);
-
     backdrop-filter: blur(.2rem);
 
      /* background-color:red;  */

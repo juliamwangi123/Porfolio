@@ -278,7 +278,7 @@ ul li a:hover{
 
 
 /* cards */
-
+/*  takes the full height of work section */
 #work{
     height: 100%;
 }
@@ -286,7 +286,7 @@ ul li a:hover{
     height: 80%;  
 }
 
-
+/* card should take full height and width of specific row section */
 .card {
     width: 100%;
     height: 100%;
@@ -294,8 +294,7 @@ ul li a:hover{
     background-image: linear-gradient(190deg,rgb(173,181,189),#02c6e9);
     backdrop-filter: blur(.2rem);
 
-     /* background-color:red;  */
-     /* inherit; */ 
+   
 }
 
 .card .face {
@@ -303,13 +302,9 @@ ul li a:hover{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.06);
     transition: 0.5s;
-    backface-visibility: hidden;
-    
-    
+    backface-visibility: hidden;    
 }
 
 .card .face.front-face,
@@ -317,20 +312,9 @@ ul li a:hover{
     text-align: center;
     color: black;
     position: absolute;
-
-    
-  
 }
 
-
-
-
-.card .face.front-face .name {
-    letter-spacing: 2px
-}
-
-
-
+/* on hover oveer the card the front rotate 180deg */
  .card:hover .face.front-face {
     transform: rotateY(180deg)
 } 
@@ -338,11 +322,11 @@ ul li a:hover{
 
 .card .face.back-face {
     position: absolute;
-    background: rgba(255, 255, 255, 0.06);
     transform: rotateY(180deg); 
     padding: 20px 30px;
     text-align: center;
-    user-select: none
+    transform-style: preserve-3d;
+    perspective: 500px;
 }
 
  .card .face.back-face .fa-quote-left {
@@ -455,14 +439,22 @@ ul li a:hover{
             height: 30vh;
             width:100%
         }
-
-        nav ul{
+        
+        .menuBar{
             display: none;
+            font-size: 18px;
+            display: block;
+
         }
 
        
         .menu{
             display: inline-block;
+            position: relative;
+            left: 80%;
+            top:-3% ;
+            color: white;
+
             
         }
         
